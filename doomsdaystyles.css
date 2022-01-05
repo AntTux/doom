@@ -1,0 +1,69 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.inputField {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#anagram {
+  margin-top: 100px;
+}
+
+#anagramButtons {
+  margin-top: 110px;
+  margin-bottom:20px;
+  display: inline;
+}
+
+.list-group-item {
+  margin: 10px;
+}
+
+.form-control {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#inputField {
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: #a4a4a4;
+}
+
+.list-group{
+  border-radius: 0%;
+  border-style: none;
+  
+}
+
+.levelButton {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.word-row {
+  display: inline;
+  background-color: black;
+}
+
+.word-solution {
+  background-color: blue;
+}
+
+.levels{
+  margin-top: 70px;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+.list-group-item{
+  border: 0px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="doomsdaystyles.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+      <title>Doomsday Algorithm Practice</title>
+    </head>
+
+
+    <body>   
+
+    <!-- Date is displayed here!-->
+    <div class="container-fluid" class="fixed-top">
+      <div class="row row-cols-1 align-items-center p-5 bg-primary text-white rounded-0">
+          <div class="col">
+            <h1 id="date"></h1>
+          </div>
+          <!-- <div class="col-md-1">
+            <button type="button" class="btn btn-light" id="resetWord" onclick="generateNewDate()">
+              <i class="fas fa-redo"></i>
+            </button>
+          </div> -->
+      </div>
+    </div>
+
+    <!-- Buttons for days of the week -->
+    <div class="container p-5">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="btn-group-vertical d-flex" style="width: 100%;">
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Sun'); generateNewDate()">Sunday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Mon'); generateNewDate()">Monday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Tue'); generateNewDate()">Tuesday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Wed'); generateNewDate()">Wednesday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Thu'); generateNewDate()">Thursday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Fri'); generateNewDate()">Friday</button>
+            <button type="button" class="btn btn-light w-100 m-1 p-4 rounded-0" onclick="checkDayOfWeek('Sat'); generateNewDate()">Saturday</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- show current score -->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col m-2" style="background-color: lightgreen; ">
+          <p>Correct</p>
+          <p id='correctGuesses'>0</p>
+        </div>
+        <div class="col m-2" style="background-color: lightgray;">
+          <p>Incorrect</p>
+          <p id='totalGuesses'>0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- List of previous dates and guesses -->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <ul class="list-group" id='list'>
+          </ul>
+        </div>
+    </div>
+
+    <script src="doomsdayscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
